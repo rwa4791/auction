@@ -214,7 +214,7 @@ var x = setInterval(function() {
 
   // If the count down is finished, write some text 
   if (distance < 0) {
-    document.getElementById("timer").innerHTML = "EXPIRED";
+    document.getElementById("timer").innerHTML = "Auction Over";
     $("#submit-bid").hide();
   }
 }, 1000);
