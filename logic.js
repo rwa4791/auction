@@ -72,7 +72,7 @@ connectionsRef.on("value", function(snap) {
 
 // ------------------------------------
 // Initial Values
-var initialBid = 0;
+var initialBid = 10000;
 var initialBidder = "No one :-(";
 var initialEmail = "";
 var highPrice = initialBid;
@@ -191,7 +191,7 @@ database.ref("/bidderData").limitToLast(1).on("child_added", function(snapshot) 
 
 //Countdown Function
 // Set the date we're counting down to
-var countDownDate = new Date("Oct 15, 2017 13:35:00").getTime();
+var countDownDate = new Date("Oct 30, 2017 14:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -214,7 +214,7 @@ var x = setInterval(function() {
 
   // If the count down is finished, write some text 
   if (distance < 0) {
-    document.getElementById("timer").innerHTML = "Auction Over";
+    document.getElementById("timer").innerHTML = "Auction Over. Whoever is the highest bidder: Sean Murphy Art Sales will contact you at the email on file.";
     $("#submit-bid").hide();
   }
 }, 1000);
